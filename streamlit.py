@@ -55,7 +55,8 @@ def criaCorrelationplot(df, colunas_numericas):
 
 
 def main():
-    st.image('logo.png', width=200)
+    st.image('logo.png', width=300)
+    sidebarCategoria = st.sidebar.checkbox('', opcoes)
     st.title('Aceleradev Data Sicence')
     st.subheader('Semana 3 - Analise de dados exploratória')
     st.image('https://media.giphy.com/media/cnbsOTkEJnq0/giphy.gif')
@@ -88,6 +89,7 @@ def main():
             describe = st.checkbox('Describe')
             if describe:
                 st.table(df[colunas_numericas].describe().transpose())
+
         st.subheader('Visualização de dados')
         st.image('https://media.giphy.com/media/Rkoat5KMaw2aOHDduz/giphy.gif', width=200)
         st.markdown('Selecione a visualização')

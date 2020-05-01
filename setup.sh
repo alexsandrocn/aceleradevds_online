@@ -1,13 +1,13 @@
-mkdir -p ~/.streamlit
+mkdir -p ~/codenation/aceleradev_ds/.streamlit
 
 echo "\
 [general]\n\
 email = \"alexsandrocn@yahoo.com\"\n\
-" > ~/.streamlit/credentials.tom
+" > ~/codenation/aceleradev_ds/.streamlit/credentials.toml
 
-lecho "\
+echo "\
 [server]\n\
 headless = true\n\
 enableCORS=false\n\
 port = $PORT\n\
-" > ~/.streamlit/config.toml
+" > ~/codenation/aceleradev_ds/.streamlit/config.toml
